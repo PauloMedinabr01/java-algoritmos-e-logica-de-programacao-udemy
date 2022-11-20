@@ -7,23 +7,23 @@ public class pagamento {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
+
 		String nome;
-	    double valor, pagamento;
-	    int horas;
+		double valor, pagamento;
+		int horas;
 
-	    System.out.print("Nome: ");
-	    nome = sc.nextLine();
+		System.out.print("Nome: ");
+		nome = sc.nextLine();
 
-	    System.out.print("Valor por hora: ");
+		System.out.print("Valor por hora: ");
 		valor = sc.nextDouble();
 
 		System.out.print("Horas trabalhadas: ");
-	    horas = sc.nextInt();
-	    
-	    pagamento = valor * horas;
+		horas = sc.nextInt();
 
-	    System.out.printf("O pagamento para %s deve ser %.2f\n", nome, pagamento);
+		pagamento = valor * horas;
+
+		System.out.printf("O pagamento para %s deve ser %.2f\n", nome, pagamento);
 
 		sc.close();
 	}

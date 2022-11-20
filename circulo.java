@@ -7,15 +7,15 @@ public class circulo {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
+
 		double r, area;
 
-	    System.out.print("Digite o valor do raio do circulo: ");
-	    r = sc.nextDouble();
+		System.out.print("Digite o valor do raio do circulo: ");
+		r = sc.nextDouble();
 
-	    area = 3.14159 * r * r;
+		area = 3.14159 * r * r;
 
-	    System.out.printf("AREA = %.3f\n", area);
+		System.out.printf("AREA = %.3f\n", area);
 
 		sc.close();
 	}

@@ -7,26 +7,26 @@ public class retangulo {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
+
 		double base, altura, area, perimetro, diagonal;
 
-	    System.out.print("Base do retangulo: ");
-	    base = sc.nextDouble();
+		System.out.print("Base do retangulo: ");
+		base = sc.nextDouble();
 
-	    System.out.print("Altura do retangulo: ");
-	    altura = sc.nextDouble();
+		System.out.print("Altura do retangulo: ");
+		altura = sc.nextDouble();
 
-	    area = base * altura;
+		area = base * altura;
 
-	    System.out.printf("AREA = %.4f\n", area);
+		System.out.printf("AREA = %.4f\n", area);
 
-	    perimetro = 2 * (base + altura);
+		perimetro = 2 * (base + altura);
 
-	    System.out.printf("PERIMETRO = %.4f\n", perimetro);
+		System.out.printf("PERIMETRO = %.4f\n", perimetro);
 
-	    diagonal = Math.sqrt(base * base + altura * altura);
+		diagonal = Math.sqrt(base * base + altura * altura);
 
-	    System.out.printf("DIAGONAL = %.4f\n", diagonal);
+		System.out.printf("DIAGONAL = %.4f\n", diagonal);
 
 		sc.close();
 	}

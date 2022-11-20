@@ -7,32 +7,32 @@ public class maior_posicao {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
+
 		int n, posmaior;
-	    double maior;
+		double maior;
 
-	    System.out.print("Quantos numeros voce vai digitar? ");
-	    n = sc.nextInt();
+		System.out.print("Quantos numeros voce vai digitar? ");
+		n = sc.nextInt();
 
-	    double[] vetor = new double[n];
+		double[] vetor = new double[n];
 
-	    for (int i=0; i<n; i++) {
-	    	System.out.print("Digite um numero: ");
-	        vetor[i] = sc.nextDouble();
-	    }
+		for (int i = 0; i < n; i++) {
+			System.out.print("Digite um numero: ");
+			vetor[i] = sc.nextDouble();
+		}
 
-	    maior = vetor[0];
-	    posmaior = 0;
+		maior = vetor[0];
+		posmaior = 0;
 
-	    for (int i=1; i<n; i++) {
-	        if (vetor[i] > maior) {
-	            maior = vetor[i];
-	            posmaior = i;
-	        }
-	    }
-		
-	    System.out.printf("MAIOR VALOR = %.1f\n", maior);
-	    System.out.printf("POSICAO DO MAIOR VALOR = %d\n", posmaior);
+		for (int i = 1; i < n; i++) {
+			if (vetor[i] > maior) {
+				maior = vetor[i];
+				posmaior = i;
+			}
+		}
+
+		System.out.printf("MAIOR VALOR = %.1f\n", maior);
+		System.out.printf("POSICAO DO MAIOR VALOR = %d\n", posmaior);
 
 		sc.close();
 	}

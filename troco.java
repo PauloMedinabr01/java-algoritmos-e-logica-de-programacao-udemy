@@ -7,22 +7,22 @@ public class troco {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
+
 		double preco, dinheiro, troco;
-	    int qtd;
+		int qtd;
 
-	    System.out.print("Preco unitario do produto: ");
-	    preco = sc.nextDouble();
+		System.out.print("Preco unitario do produto: ");
+		preco = sc.nextDouble();
 
-	    System.out.print("Quantidade comprada: ");
-	    qtd = sc.nextInt();
+		System.out.print("Quantidade comprada: ");
+		qtd = sc.nextInt();
 
-	    System.out.print("Dinheiro recebido: ");
-	    dinheiro = sc.nextDouble();
+		System.out.print("Dinheiro recebido: ");
+		dinheiro = sc.nextDouble();
 
-	    troco = dinheiro - (preco * qtd);
+		troco = dinheiro - (preco * qtd);
 
-	    System.out.printf("TROCO = %.2f\n", troco);
+		System.out.printf("TROCO = %.2f\n", troco);
 
 		sc.close();
 	}

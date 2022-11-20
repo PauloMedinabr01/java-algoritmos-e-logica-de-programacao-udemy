@@ -7,17 +7,17 @@ public class consumo {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
+
 		int distancia;
-	    double gasto, consumo;
+		double gasto, consumo;
 
-	    System.out.print("Distancia percorrida: ");
-	    distancia = sc.nextInt();
+		System.out.print("Distancia percorrida: ");
+		distancia = sc.nextInt();
 
-	    System.out.print("Combustivel gasto: ");
-	    gasto = sc.nextDouble();
+		System.out.print("Combustivel gasto: ");
+		gasto = sc.nextDouble();
 
-	    consumo = distancia/gasto;
+		consumo = distancia / gasto;
 
 		System.out.printf("Consumo medio = %.3f\n", consumo);
 

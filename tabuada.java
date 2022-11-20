@@ -7,16 +7,16 @@ public class tabuada {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
+
 		int n, produto;
 
 		System.out.print("Deseja a tabuada para qual valor? ");
-	    n = sc.nextInt();
+		n = sc.nextInt();
 
-	    for (int i=1;i<=10;i++) {
-	        produto = n * i;
+		for (int i = 1; i <= 10; i++) {
+			produto = n * i;
 			System.out.printf("%d x %d = %d\n", n, i, produto);
-	    }
+		}
 
 		sc.close();
 	}

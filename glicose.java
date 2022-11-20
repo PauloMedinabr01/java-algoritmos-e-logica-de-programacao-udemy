@@ -7,23 +7,21 @@ public class glicose {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
+
 		double glicose;
 
-	    System.out.print("Digite a medida da glicose: ");
-	    glicose = sc.nextDouble();
+		System.out.print("Digite a medida da glicose: ");
+		glicose = sc.nextDouble();
 
-	    System.out.print("Classificacao: ");
+		System.out.print("Classificacao: ");
 
-	    if (glicose <= 100) {
-	    	System.out.println("normal");
-	    }
-	    else if (glicose <= 140) {
-	    	System.out.println("elevado");
-	    }
-	    else {
-	    	System.out.println("diabetes");
-	    }
+		if (glicose <= 100) {
+			System.out.println("normal");
+		} else if (glicose <= 140) {
+			System.out.println("elevado");
+		} else {
+			System.out.println("diabetes");
+		}
 
 		sc.close();
 	}
